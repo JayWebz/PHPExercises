@@ -1,0 +1,321 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*----- GENERAL -----*/
+@-ms-viewport {width: device-width;}
+@viewport {width: device-width;}
+
+body {
+	font: 400 1.15em/2em 'Cabin', Helvetica, 'Microsoft Sans Serif', Arial, sans serif;  
+}
+
+a, a:visited {
+	color: #c45157;
+	text-decoration: none;	
+}
+
+a:hover {
+	color: #691c33;	
+	font-weight: 700;
+}
+
+/*----- BANNER STYLES ------*/
+
+section#banner {
+	background: url(images/escheresque_ste.png);
+	color: #73a5b3;
+	box-shadow:  0px 0px 14px #000;
+	position: relative;
+}
+
+section#banner h1 {
+	font-size: 2em;	
+	line-height: 1.5em;
+	text-transform: uppercase;
+	text-align: center;
+	padding: .75em 0;
+color: rgba(115, 165, 179.6);
+text-shadow: 2px 8px 6px rgba(143,147,152,0.2),
+                 0px -5px 35px rgba(40,48,72,0.3);
+}
+
+section#banner nav#globalnav {
+	background: #DDDDDD;	
+	border-top: 2px solid #aaaaaa;
+	border-bottom: 2px solid #DADADA;
+	height: 2.2em;
+	overflow: hidden;
+}
+
+section#banner nav#globalnav.nav_open {
+	height: auto;
+	overflow: visible;
+}
+
+section#banner nav#globalnav a#menu {
+	display: block;
+	text-align: center;
+	line-height: 2.2em;
+	height: 2.2em;
+	box-shadow:  0px 0px 14px #000;
+}
+
+section#banner nav#globalnav ul li {
+	padding: 0 20px;
+	height: 2.2em;
+	line-height: 2.2em;
+}
+
+section#banner nav#globalnav ul li a, section#banner nav#globalnav ul li a:visited {
+	display: block;	
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	border-bottom: 2px solid #d9d9d9;
+}
+
+section#banner nav#globalnav ul li:hover {
+	background: #DADADA;
+	transition: ease-in-out 0.3s;
+	border-radius: 5px;
+	text-shadow: 0 2px 0 rgba(255, 255, 255, 0.4);
+}
+
+/*-----GENERAL 'section' RULES -----*/
+
+#content {
+	background: #283048; 
+	background: -moz-linear-gradient(to left, #283048, #859398);
+	background: -webkit-linear-gradient(to left, #283048, #859398);
+	background: -webkit-gradient(linear, 0 0, 100% 0, from(#283048), to(#859398));
+	background: -o-linear-gradient(to left, #283048, #859398);
+	background: linear-gradient(to left, #283048, #859398);
+	color: #ffffff;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+section article {
+	padding: 1.5em 20px;
+	width: 80%;
+	max-width: 920px;
+	margin-left: auto;
+	margin-right: auto;
+	background: url(images/article-pattern.png);
+	box-shadow:  0px 0px 14px #000;
+	margin-bottom: 20px;
+	border-radius: 5px;
+}
+
+section article header {
+	text-align: right;
+	padding: 2em 0;	
+}
+
+section article header h1 {
+	text-transform: uppercase;
+	font-size: 1.65em;
+	margin-bottom: 0.5em;
+}
+
+section article header h2 {
+	font-size: 1.4em;
+	font-weight: 700;
+}
+
+section article h3 {
+	font-size: 1.2em;
+	text-transform: uppercase;
+	margin: 1em 2em;	
+	
+}
+
+/*----- section: other elements -----*/
+
+section article p, section article ul, section article ol, section article dl, section article aside, section article blockquote {
+	margin-bottom: 1.5em;
+}
+
+section article aside {
+	padding: 1.5em;
+	box-shadow: inset 0px 0px 14px #000;
+	border-radius: 5px;
+	background: #283048; 
+	background: -moz-linear-gradient(to left, #283048, #859398);
+	background: -webkit-linear-gradient(to left, #283048, #859398);
+	background: -webkit-gradient(linear, 0 0, 100% 0, from(#283048), to(#859398));
+	background: -o-linear-gradient(to left, #283048, #859398);
+	background: linear-gradient(to left, #283048, #859398);
+	
+}
+
+section article ul {
+	list-style-type: circle;
+	margin: 1em 4em;	
+}
+
+section article ul.gallery, .thumbnail-img {
+	list-style-type: none;
+	padding: 1.5em;
+	box-shadow: inset 0px 0px 14px #000;
+	border-radius: 5px;
+	background: #283048; 
+	background: -moz-linear-gradient(to left, #283048, #859398);
+	background: -webkit-linear-gradient(to left, #283048, #859398);
+	background: -webkit-gradient(linear, 0 0, 100% 0, from(#283048), to(#859398));
+	background: -o-linear-gradient(to left, #283048, #859398);
+	background: linear-gradient(to left, #283048, #859398);
+}
+
+.thumbnail-img {
+	width: 200px;
+}
+
+section article ul.gallery li {
+	display: inline-block;
+	position: relative;
+}
+
+section article ol {
+	list-style-type: decimal;
+	margin: 1em 4em;	
+}
+
+section article li {
+	margin: 1em 4em;
+}
+
+section article dl {
+	font-style: italic;  	
+}
+
+section article dl dt {
+	font-weight: 700;	
+}
+
+section article dd {
+	margin-left: 1.5em;	
+}
+
+section article blockquote {
+	margin: 3em 4em;
+	font-style: italic;
+	color: #333333;
+	font-size: 1.2em;	
+}
+
+section article blockquote a {
+	float: right;	
+}
+
+section article pre {
+	color: #000;
+	font-family: 'Inconsolata', Helvetica, Arial, sans-serif;	
+}
+
+/*----- FOOTER -----*/
+
+footer {
+	background: #DDDDDD;
+	padding: 20px;
+	border-top: 2px solid #aaaaaa;
+	border-bottom: 2px solid #aaaaaa;
+	box-shadow:  0px 0px 14px #000;
+}
+
+.footer-content {
+	max-width: 920px;
+	margin-left: auto;
+	margin-right: auto;	
+	text-align: center;
+}
+
+footer article header h1 {
+	font-size: 1.15em;
+	text-transform: uppercase;	
+}
+
+footer article {
+	padding: 20px;	
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#copyright {
+	display: block;
+	font-size: 0.66em;
+	background: #283048; 
+	background: -moz-linear-gradient(to left, #283048, #859398);
+	background: -webkit-linear-gradient(to left, #283048, #859398);
+	background: -webkit-gradient(linear, 0 0, 100% 0, from(#283048), to(#859398));
+	background: -o-linear-gradient(to left, #283048, #859398);
+	background: linear-gradient(to left, #283048, #859398);
+	color: #ffffff;
+	box-shadow:  inset 0px 0px 14px #000;
+}
+
+#copyright p {
+	margin-left: auto;
+	margin-right: auto;	
+	padding: 1.5em 20px;
+	width: 80%;
+	max-width: 920px;
+}
+
+/*----- MEDIA QUERIES -----*/
+@media screen and (min-width: 767px) {
+	section#banner nav#globalnav {
+		height: auto;
+		overflow: visible;	
+	}
+	
+	section#banner nav#globalnav a#menu {
+		display: none;	
+	}
+	
+	section#banner nav#globalnav ul {
+		overflow: hidden;	
+	}
+	
+	section#banner nav#globalnav ul li {
+		float: left;
+		width: 25%;
+		text-align: center;
+		box-sizing: border-box;
+		padding: 0px;	
+	}
+	
+	section#banner nav#globalnav ul li:hover {
+		box-shadow: inset 0px 10px 14px #aaaaaa;
+	}
+	
+	section#banner nav#globalnav ul li a:hover {
+		border-bottom: 0px;
+	}
+	
+	section article header {
+		text-align: left;	
+	}
+	
+	section aside {
+		float: right;	
+	}
+	
+	section article aside {
+		background: -moz-linear-gradient(to left, #283048, #4E5868);
+		background: -webkit-linear-gradient(to left, #283048, #4E5868);
+		background: -webkit-gradient(linear, 0 0, 100% 0, from(#283048), to(#4E5868));
+		background: -o-linear-gradient(to left, #283048, #4E5868);
+		background: linear-gradient(to left, #283048, #4E5868);
+	}
+	
+	footer {
+		overflow: hidden;	
+	}
+	
+	footer article {
+		float: left;
+		width: 33%;
+		box-sizing: border-box;	
+	}
+}
